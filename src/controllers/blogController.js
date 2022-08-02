@@ -1,7 +1,7 @@
 const blogModel = require('../models/blogModel');
 
 
-// Kirtan-G
+
 const createBlog = async function (req, res) {
     try {
         let Blogs = req.body;
@@ -15,7 +15,7 @@ const createBlog = async function (req, res) {
 module.exports.createBlog = createBlog;
 
 
-// amitvsk
+
 const getBlogs = async function (req, res) {
     try {
         let data = req.query
@@ -35,7 +35,7 @@ const getBlogs = async function (req, res) {
 module.exports.getBlogs = getBlogs;
 
 
-// Salman-110
+
 const updateblogs = async function (req, res) {
     try {
         let Id = req.params.blogId;
@@ -79,7 +79,7 @@ const updateblogs = async function (req, res) {
 module.exports.updateblogs = updateblogs;
 
 
-// Kirtan-G
+
 const deleteBlogs = async function (req, res) {
     try {
         let blogId = req.params.blogId;
@@ -120,7 +120,7 @@ const deleteBlogs = async function (req, res) {
 module.exports.deleteBlogs = deleteBlogs;
 
 
-// Salman-110
+
 const queryDeleted = async function (req, res) {
     try {
         let data = req.query;
